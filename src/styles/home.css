@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+
+
+
+<span class='pointer' > &nbsp; &lt; &nbsp;  </span>
+      <span class='pointer' > &nbsp;&nbsp; &gt; &nbsp;  </span>
+      <section>
+        <div class='con'>1</div>
+        <div class='con'>2</div>
+        <div class='con'>3</div>
+        <div class='con'>4</div>
+        <div class='con'>5</div>
+        <div class='con'>6</div>
+        <div class='con'>7</div>
+        <div class='con'>8</div>
+        <div class='con'>9</div>
+        <div class='con'>10</div>
+        <div class='con'>11</div>
+        <div class='con'>12</div>
+
+      </section>
+
+
+
+
+.pointer {
+    position:relative;
+    top:180px;
+    font-size: 20px;
+    font-family: 'Koulen', cursive;;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+    left: .5%;
+    z-index: 10000;
+    background:rgb(13, 48, 101);
+    padding:-1px;
+    border-radius: 50%;
+}
+
+.pointer:nth-of-type(2){
+    left: 93.5%;
+    text-align: right;
+}
+
+section{
+    width: 90%;
+    height: 300px;
+    background: #f4f4f4;
+    margin: 10px auto;
+    display: flex;
+    justify-content: left;
+    overflow-x: auto;
+}
+
+section::-webkit-scrollbar{
+    visibility: hidden;
+
+}
+
+.con{
+    min-width:330px;
+    height: 200px;
+    position:relative;
+    left:0;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 100px;
+    font-weight: bold;
+    margin: 10px 20px;
+    color:white;
+    background:purple;
+    transition: 0.5s;
+    
+}
